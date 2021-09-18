@@ -3,15 +3,15 @@
         padding: 5px 0px 5px 0px;
     }
 
-    .navigator h1 {
+    .navigation h1 {
         font-size: 2.6rem;
     }
 
-    .navigator ul {
+    .navigation ul {
         padding: 0px 10px 0px 80px;
     }
 
-    .navigator ul li a {
+    .navigation ul li a {
         font-size: 1rem;
         display: flex;
         text-align: center;
