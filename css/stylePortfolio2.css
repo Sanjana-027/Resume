@@ -28,71 +28,6 @@
 body {
   background-color: var(--gridbox);
 }
-.my-intro{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper{
-  display: inline-flex;
-}
-
-.wrapper .static-text{
-  color:white;
-    font-size: 26px;
-    font-family: emoji;
-}
-.wrapper .dynamic-text{
-margin-left: 15px;
-line-height: 90px;
-height: 90px;
-overflow: hidden;
-}
-.dynamic-text li{
-  color: red;
-  list-style: none;
-  font-weight: 200;
-  position: relative;
-  top: 0;
- animation: slide 6s steps(4) infinite;
-}
-@keyframes slide {
-  100%{
-    top: -360px;
-  }
-}
-.dynamic-text li span{
-  position: relative;
-}
-
-.dynamic-text li span::after{
-  content: "";
-  position: absolute;
-  left:0;
-  height: 100%;
-  width:100%;
-  background: bisque;
-  /* border-left: 2px solid red;
-  /*animation: typing 1.5s steps(10) infinite;*/
-}
-
-/*@keyframes typing{
-  100%{
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-}*/
-
-
-
-
-
-
-
-
-
-
-
 
 h2 {
   font-size: 2.8rem;
@@ -132,8 +67,8 @@ h4 {
 header {
   position: fixed;
   width: 100%;
- /* background-color: rgba(0, 0, 0, 0.9);*/
- background-image: url(../assets/images/smoke3.gif);
+ background-color: rgba(0, 0, 0, 0.9);
+  
   padding: 15px 0px 28px 0px;
   z-index: 1;
 }
@@ -187,7 +122,7 @@ header {
   background-color: black;
   width: 100%;
   padding-top: 130px;
-  background-image: url(../assets/images/ani1.gif);
+  background-image: url(../assets/images/flash.gif);
   background-position: 49% 45%;
   background-repeat: no-repeat;
   background-size: 1280px auto;
