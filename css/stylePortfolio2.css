@@ -28,6 +28,71 @@
 body {
   background-color: var(--gridbox);
 }
+.my-intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper{
+  display: inline-flex;
+}
+
+.wrapper .static-text{
+  color:white;
+    font-size: 26px;
+    font-family: emoji;
+}
+.wrapper .dynamic-text{
+margin-left: 15px;
+line-height: 90px;
+height: 90px;
+overflow: hidden;
+}
+.dynamic-text li{
+  color: red;
+  list-style: none;
+  font-weight: 200;
+  position: relative;
+  top: 0;
+ animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-text li span{
+  position: relative;
+}
+
+.dynamic-text li span::after{
+  content: "";
+  position: absolute;
+  left:0;
+  height: 100%;
+  width:100%;
+  background: bisque;
+  /* border-left: 2px solid red;
+  /*animation: typing 1.5s steps(10) infinite;*/
+}
+
+/*@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}*/
+
+
+
+
+
+
+
+
+
+
+
 
 h2 {
   font-size: 2.8rem;
@@ -71,6 +136,12 @@ header {
   padding: 15px 0px 28px 0px;
   z-index: 1;
 }
+.resume{
+  font-family: math;
+    font-size: 31px;
+    font-style: italic;
+    color: floralwhite;
+}
 .navigation {
   max-width: 1200px;
   margin: auto;
@@ -88,6 +159,7 @@ header {
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  margin-bottom: -20px;
 }
 
 .navigation ul li a {
@@ -114,27 +186,26 @@ header {
   background-color: black;
   width: 100%;
   padding-top: 130px;
-  background-image: url(../assets/images/gif-5.gif);
+  background-image: url(../assets/images/ani1.gif);
   background-position: 49% 45%;
   background-repeat: no-repeat;
   background-size: 1280px auto;
 }
 
-.mainContainer .divider {
-  font-size: 4.5em;
-  color: var(--pink);
-}
+
 
 .mainContainer .text {
-  font-family: f1;
-  font-size: 4rem;
+  font-family: math;
+  font-size: 27px;
+  margin-top: 88px; 
+  
   margin: 55px 0px 0px 20px;
   color: white;
 }
 
 .mainContainer .name {
-  font-family: f1;
-  font-size: 2.8rem;
+  font-family: serif;
+    font-size: 40px;
   letter-spacing: 0.1rem;
   margin-left: 20px;
   font-weight: 600;
@@ -144,10 +215,12 @@ header {
 .btn1 {
   font-family: f1;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+ /* background-color: rgba(0, 0, 0, 0.6);*/
+ background-image: url(../assets/images/btn2.gif);
   border: 2px solid var(--pink);
   padding: 17px 34px;
   margin: 50px 0px 0px 20px;
+  border-radius: 28px;
 }
 .btn1 span {
   font-weight: 700;
@@ -203,7 +276,7 @@ header {
 /* Article > aboutMe */
 
 .aboutMe {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 .aboutMe .container {
   display: flex;
@@ -211,6 +284,7 @@ header {
 .aboutMe .pic {
   width: 40%;
   padding-left: 20px;
+  margin-top: 80px;
 }
 .aboutMe .ctext {
   padding-left: 60px;
@@ -230,6 +304,21 @@ img {
   border-radius: 10px;
   color: var(--gridtext);
   box-shadow: -10px -10px 10px rgb(212, 212, 212), 10px 10px 10px #a6aab6;
+}
+/* Certificates */
+.certificates #carouselExampleInterval {
+  margin: auto;
+  width: 75%;
+  margin-top: 50px;
+}
+
+.certificates .arrow {
+  color: black;
+  font-size: 2rem;
+}
+
+.certificates .carousel-indicators li {
+  background-color: var(--gridtext);
 }
 
 /* Article > hobbyNdSoftSkills */
