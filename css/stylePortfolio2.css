@@ -132,7 +132,8 @@ h4 {
 header {
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+ /* background-color: rgba(0, 0, 0, 0.9);*/
+ background-image: url(../assets/images/smoke3.gif);
   padding: 15px 0px 28px 0px;
   z-index: 1;
 }
@@ -295,7 +296,7 @@ header {
   color: var(--fontgrey);
   font-size: 1.6rem;
   line-height: 35px;
-  padding: 70px 15px 0px 0px;
+  padding: 45px 15px 0px 0px;
 }
 img {
   width: 100%;
