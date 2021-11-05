@@ -172,7 +172,7 @@ nav ul {
     font-family: f1;
     font-size: 4rem;
     margin: 55px 0px 0px 20px;
-    color: black;
+    color: #f38f8f;
 }
 
 .mainContainer .name {
@@ -181,7 +181,7 @@ nav ul {
     letter-spacing: 0.1rem;
     margin-left: 20px;
     font-weight: 600;
-    color: black;
+    color:#f38f8f;
 }
 
 .btn1 {
