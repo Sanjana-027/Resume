@@ -1,29 +1,31 @@
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 330px) {
+    .groupbox .box {
+        padding: 8px 40px 0px;
+    }
+
+}@media only screen and (max-width: 850px) {
     header {
         padding: 5px 0px 5px 0px;
     }
 
-    .navigation h1 {
+    nav h1 {
         font-size: 2.6rem;
     }
 
-    .navigation ul {
+    nav ul {
         padding: 0px 10px 0px 80px;
     }
 
-    .navigation ul li a {
+    nav ul li a {
         font-size: 1rem;
         display: flex;
         text-align: center;
         margin: 0px;
         letter-spacing: 0.02rem;
-        padding: 10px 10px;
     }
 
-
-
     .mainContainer {
-        background-position: 35% 5%;
+        background-position: 35% 0%;
     }
 
     .mainContainer .divider {
@@ -76,9 +78,18 @@
         font-size: 1.5rem;
     }
 
+    .groupbox {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
     .hobbyNdSoftSkills .grid .box {
         padding: 0px 20px;
         height: 95px;
+    }
+
+    .certificates #carouselExampleInterval {
+        width: 75%;
     }
 
     .foot {
@@ -94,11 +105,6 @@
         padding: 10px 7px;
         margin-right: 12px;
     }
-    .foot .mail a:hover {
-        background-color: var(--pink);
-        font-size: 1rem;
-        padding: 12px 8px;
-    }
 
     .foot .icons i {
         font-size: 0.8rem;
@@ -113,6 +119,15 @@
         padding: 15px;
     }
 }
+
+
+
+@media only screen and (max-width: 925px) {
+    .groupbox .box {
+        padding: 10px 10px 0px 40px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     header {
         padding: 0px;
@@ -221,3 +236,22 @@
    
     
 }
+
+@media only screen and (max-width: 1200px) {
+    .groupbox .box {
+        padding: 10px 40px 0px 40px;
+    }
+
+    .navigation ul li a {
+        margin: 0px 12px;
+    }
+
+}
+
+@media only screen and (max-width: 1450px ) and (min-width: 851px) {
+.certificates #carouselExampleInterval {
+    width: 50%;
+}
+}
+
+
