@@ -189,6 +189,7 @@ nav ul {
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid var(--pink);
+    border-radius: 10px 100px;
     padding: 17px 34px;
     margin: 50px 0px 0px 20px;
 }
@@ -394,6 +395,7 @@ nav ul {
     color: white;
     background-color: var(--bgblack);
     border: 2px solid var(--pink);
+    border-radius: 10px 100px;
     padding: 17px 34px;
     letter-spacing: 0.02rem;
     transition: all 0.2s ease-in-out;
